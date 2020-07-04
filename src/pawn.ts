@@ -10,6 +10,7 @@ export class Pawn implements ChessPiece {
 
   getAllowedMoves(yourStartingPosition: BoardPosition, board: Board): ChessMove[] {
     const result: ChessMove[] = [];
+    // TODO: implement rules about pawn movement here
     return result;
   }
 
