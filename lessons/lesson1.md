@@ -96,6 +96,14 @@ npm run build
 
 This avoids you having to remember the command line required for the build.  (In future, that build command might get more complex as you start adding other things into the build process.)
 
+It can get annoying to have to build after every change you make.  There's a really helpful option on the tsc compiler (-w) called "watch" that will compile your project, but then keep running and watch as you make changes.  So you can see the moment that you've made a change that is not valid.  To use this:
+
+```
+npm run watch
+```
+
+You'll see in package.json, that it just calls ```tsc -p tsconfig.json -w```
+
 ## Assignment 1
 
 You will see that pawn-spec.ts already has one simple unit test that checks one particular scenario -- of a pawn in its initial position, but on an empty board.  If you run your unit tests now (using the stub of the Pawn class), you'll see that it will fail -- as you expect.  You are returning no available moves, when there should be some.
