@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node dist/chess.js",
     "build": "tsc -p tsconfig.json",
+    "watch": "tsc -p tsconfig.json -w",
     "test": "mocha --exit -r ts-node/register src/**/*-spec.ts"
   },
   "author": "",
